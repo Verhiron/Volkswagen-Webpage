@@ -1,0 +1,269 @@
+body{
+    background-color: #f7f7f7;
+}
+
+/* Navigation bar*/
+.navbar{
+    background-color: rgba(26,26,26,0.5);
+    transition: background-color 0.5s ease-out;
+    border-bottom: 1px solid white; 
+  /*  box-shadow: 0px 0px 10px 2px white; */
+}
+
+.navbar-toggler{
+    background-color: #f8f8ff;
+}
+
+.navbar.scrolled{
+    transition: background-color 0.5s ease-in;
+    background-color: #1A1A1A;
+}
+
+svg{
+    height: 60px;
+    width: 60px;
+    fill: white;
+}
+
+svg.scrolled {
+    fill: #f8f8ff;
+}
+
+.nav-item{
+    list-style: none;
+}
+
+.links{
+    color: #f8f8ff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.links:hover{
+    color: #4ce0d2;
+    text-decoration: underline;
+}
+
+.links.scrolled{
+    color: #f8f8ff;
+}
+
+.nav-link.scrolled:hover {
+    color: #4ce0d2;
+}
+/* -----------*/
+
+/* scroll bar indicator */
+
+.scroll-container {
+    width: 100%;
+    height: 3px;
+    background: translucent;
+}
+  
+  .progress-bar {
+    height: 1px;
+    width: 0%;
+    background-color: #f8f8ff;
+    box-shadow: 0px 0px 10px 1px #f8f8ff;
+}
+
+/* -----------*/
+
+
+/* Image carousel*/
+
+.carousel-caption {
+    top: 15%;
+    bottom: auto;
+    font-weight: 1000;
+    right: 50%;
+    font-size: 70px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.carousel-item img {
+    filter: brightness(80%);
+    margin-bottom: 3em;
+}
+
+/* -----------*/
+
+/* Image info cards*/
+
+.info_card{
+    margin: 1em;
+    padding:1em;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.5);
+}
+    
+    
+.info_card img{
+    box-shadow: -2px 19px 24px 0px rgba(0,0,0,0.3);
+    transform: translate(0px, -30px);
+    max-height: 200px;
+}
+    
+.card_button, .btn-prim {
+    color: #000;
+    font-weight: 500;
+    margin:0;
+}
+   
+.card_button:hover, .btn-prim:hover{
+    color: #4ce0d2;
+    background-color:#1A1A1A;
+}
+
+/* -----------*/
+
+.btn-second{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 150px;
+}
+.btn-prim{
+    height: 50px;
+    width: 150px;
+    color: black;
+}
+
+.btn-cta{
+    color: #4ce0d2;
+    background-color: #1A1A1A;
+}
+
+.btn-cta:hover{
+    background-color: #1A1A1A;
+    color: #fff;
+}
+
+/* Collapse Info Cards*/
+
+.info-container{
+    width: 80%;
+    float: right;
+}
+
+.info-container2{
+    width: 80%;
+    float: left;
+}
+
+.test_card {
+    margin: 1em;
+}
+
+/* -----------*/
+
+/* Footer */
+
+.footerLinks {
+    font-weight: 500;
+    color: #000;
+}
+
+.footerLinks:hover {
+    color: #000;
+}
+
+/* this is the reverse images with text ie.lights */
+
+.reverse{
+    margin-top: 100px;
+}
+    
+.nonReverse{
+    margin-top: 100px;
+}
+
+.infoblock{
+    padding: 75px;
+}
+
+.text{
+    width: 80%;
+    text-align: center;
+    margin:auto;
+    font-size: 20px;
+    padding:50px;
+}
+
+.infoHeading{
+    text-align: center;
+    font-weight: 350;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 2400px) {
+    .carousel-item img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .infoImgL{
+        right: 150px;
+    }
+    .infoImgR{
+        left: 150px;
+    }
+}
+
+/* -------------- */
+
+@media only screen and (max-width: 600px) {
+    .text{
+        padding:10px;
+        width: 100%;
+    }
+
+.cara-img{
+    height: 500px;
+    width: auto;
+}
+.carousel-caption{
+    top: 30%;
+    left: 10%;
+    font-size: 40px;
+}
+.infoblock{
+    padding: 0px;
+}
+
+
+/* this is the reverse images with text ie.lights */
+
+.reverseCont{
+    -webkit-flex-direction: column-reverse;
+}
+
+.nonReverse{
+     margin-top: 300px;
+}
+
+/* -------------- */
+
+.navbar {
+        border-bottom: none;
+        box-shadow: none;
+        background-color: rgba(26,26,26,0.8);
+}
+
+.links{
+        margin-left: 25%;
+    }
+
+svg{
+        height: 50px;
+        width: 50px;
+}
+
+.links{
+        font-size: 1em;
+}
+}
