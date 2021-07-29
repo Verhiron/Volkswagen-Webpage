@@ -2,6 +2,26 @@ body{
     background-color: #f7f7f7;
 }
 
+@keyframes colourChange {
+    0% {
+      -webkit-filter: hue-rotate(0deg);
+              filter: hue-rotate(0deg);
+    }
+    50% {
+      -webkit-filter: hue-rotate(360deg);
+              filter: hue-rotate(360deg);
+    }
+    100% {
+      -webkit-filter: hue-rotate(0deg);
+              filter: hue-rotate(0deg);
+    }
+  }
+
+.carColourChange {
+    -webkit-animation: colourChange 15s ease-in-out infinite;
+            animation: colourChange 15s ease-in-out infinite;
+  }
+
 /* Navigation bar*/
 .navbar{
     background-color: rgba(26,26,26,0.5);
@@ -195,7 +215,7 @@ svg.scrolled {
 .infoHeading{
     text-align: center;
     font-weight: 350;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
